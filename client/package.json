@@ -1,11 +1,11 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "This is the Frontend to AlgoExpert.io Clone For YouTUBE Tut",
+  "description": "This is the FrontEnd to AlgoExpert CLone ",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",
-    "build": " rm -rf ./public/build && webpack"
+    "build": "rm -rf ./public/build && webpack"
   },
   "author": "Junior Hlongwane",
   "license": "ISC",

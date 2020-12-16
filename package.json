@@ -1,0 +1,30 @@
+{
+  "name": "algoexpert-clone",
+  "version": "1.0.0",
+  "description": "This is the Backend to AlgoExpert CLone ",
+  "main": "build/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w & nodemon .",
+    "start": "tsc & node"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ntshembo-Hlongwane1/AlgoExpert-Clone.git"
+  },
+  "author": "Junior Hlongwane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ntshembo-Hlongwane1/AlgoExpert-Clone/issues"
+  },
+  "homepage": "https://github.com/Ntshembo-Hlongwane1/AlgoExpert-Clone#readme",
+  "dependencies": {
+    "-": "0.0.1",
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.14",
+    "D": "^1.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}

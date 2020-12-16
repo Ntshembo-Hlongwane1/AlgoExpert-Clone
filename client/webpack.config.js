@@ -6,8 +6,9 @@ module.exports = {
     path: path.resolve(__dirname, "public/build"),
     filename: "bundle.[fullhash].js",
   },
+
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
 
   module: {
@@ -30,16 +31,16 @@ module.exports = {
         ],
       },
       {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: "file-loader",
           },
         ],
-      },
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
       },
     ],
   },
@@ -49,7 +50,6 @@ module.exports = {
       template: "./public/index.html",
     }),
   ],
-
   devServer: {
     historyApiFallback: true,
     port: 3000,
