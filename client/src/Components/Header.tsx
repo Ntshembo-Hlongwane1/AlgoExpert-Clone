@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import Avatar from "@material-ui/core/Avatar";
 import "../StyleSheet/Header.css";
 import Logo from "../assets/atom.svg";
 import CreditCardIcon from "../assets/card.svg";
 
-const Header = () => {
+const Header: FC = () => {
   const currentURL = window.location.href;
 
   return (

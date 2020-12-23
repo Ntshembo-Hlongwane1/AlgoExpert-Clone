@@ -1,0 +1,24 @@
+.MainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.MainContent__header {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.Header-Text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #001629;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

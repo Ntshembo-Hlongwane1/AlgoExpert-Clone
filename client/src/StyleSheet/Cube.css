@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+
+  -webkit-perspective: 750;
+  margin-bottom: 10rem;
+}
+
+.shape {
+  position: relative;
+  top: 100px;
+  margin: 0% auto;
+  width: 250px;
+  height: 250px;
+  animation: spin 20s infinite linear;
+  transform-style: preserve-3d;
+}
+
+img {
+  opacity: 0.8;
+  transition: opacity 1s;
+}
+
+.shape > div {
+  border: 1px solid #333;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+  transition: -webkit-transform 2s;
+}
+
+.shape > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform: rotateY(-360deg) rotateX(360deg);
+  }
+}
+
+.one {
+  transform: rotateX(90deg) translateZ(125px);
+}
+.two {
+  transform: translatez(125px);
+}
+.three {
+  transform: rotateY(90deg) translateZ(125px);
+}
+
+.four {
+  transform: rotateY(180deg) translateZ(125px);
+}
+
+.five {
+  transform: rotateY(-90deg) translateZ(125px);
+}
+
+.six {
+  transform: rotateX(-90deg) translateZ(125px);
+}

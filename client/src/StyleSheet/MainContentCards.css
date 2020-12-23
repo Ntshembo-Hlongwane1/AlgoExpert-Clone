@@ -1,0 +1,34 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  width: 30%;
+  padding: 1rem;
+  margin-bottom: 1.4rem;
+  cursor: pointer;
+}
+
+.Card:hover {
+  box-shadow: 0 0 35px -2px rgba(0, 0, 0, 0.2);
+}
+
+.Card:hover .Card__icon {
+  filter: invert(53%) sepia(45%) saturate(3258%) hue-rotate(219deg)
+    brightness(96%) contrast(88%);
+  transform: scale(1.1);
+  transition: ease-in 0.4s;
+}
+
+.Card__icon {
+  width: 15%;
+}
+
+.Content__icon {
+  width: 100%;
+}
+
+.Card__HeaderText {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
