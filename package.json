@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w & nodemon .",
-    "start": "tsc & node"
+    "start": "tsc & node",
+    "temp": "nodemon build/server.js"
   },
   "type": "module",
   "repository": {
@@ -20,15 +21,22 @@
   },
   "homepage": "https://github.com/Ntshembo-Hlongwane1/AlgoExpert-Clone#readme",
   "dependencies": {
-    "-": "0.0.1",
     "@types/express": "^4.17.9",
     "@types/node": "^14.14.14",
-    "D": "^1.0.0",
+    "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "mongoose": "^5.11.9",
     "nodemon": "^2.0.6"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.9"
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.9",
+    "@types/dotenv": "^8.2.0",
+    "@types/formidable": "^1.0.32",
+    "@types/mongoose": "^5.10.3",
+    "@types/nodemon": "^1.19.0"
   }
 }
