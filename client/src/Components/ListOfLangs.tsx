@@ -1,16 +1,18 @@
 import React from "react";
-import "../StyleSheet/ListOfLangs.css";
 import Android from "../assets/android.svg";
-import Atom from "../assets/atom.svg";
-import monitorScreen from "../assets/coding.svg";
+import atom from "../assets/atom.svg";
+import MonitorScreen from "../assets/coding.svg";
+import "../StyleSheet/ListOfLangs.css";
 
-export const ListOfLangs = () => {
+interface Props {}
+
+export const ListOfLangs = (props: Props) => {
   return (
     <div className="ListOfLangs">
       <div className="listOfLangs__header">
-        <h2>We Speak 9 Languages</h2>
+        <h3>We Speak 9 Languages.</h3>
       </div>
-      <div className="listOfLangs__mainText">
+      <div className="listOfLangs__text">
         <p>
           There's nothing more frustrating than opening an interview prep book,
           only to find a bunch of solutions in a programming language that you
@@ -18,28 +20,23 @@ export const ListOfLangs = () => {
           solutions in 9 popular languages.
         </p>
       </div>
-
-      <div className="listOfLangs__programmingLangs">
-        <div className="Java">
-          <img className="programming__langsIcons" src={Android} alt="" />
-          <h4 className="programming__langLanguage">
-            {" "}
-            <span className="programming__langsName">Java</span>, for all you
-            Androiders
+      <div className="listOfLangs__programmingL">
+        <div className="java">
+          <img className="listOfLangs__icons" src={Android} alt="" />
+          <h4 className="listOfLangs__name">
+            <span>Java</span>,for all you Androiders
           </h4>
         </div>
         <div className="python">
-          <img className="programming__langsIcons" src={Atom} alt="" />
-          <h4 className="programming__langLanguage">
-            <span className="programming__langsName">Python</span>, for all data
-            scientits
+          <img className="listOfLangs__icons" src={atom} alt="" />
+          <h4 className="listOfLangs__name">
+            <span>Python</span>, for all data scientist
           </h4>
         </div>
-        <div className="Typescript">
-          <img className="programming__langsIcons" src={monitorScreen} alt="" />
-          <h4 className="programming__langLanguage">
-            <span className="programming__langsName">TypeScript</span>, For All
-            web developers
+        <div className="typescript">
+          <img className="listOfLangs__icons" src={MonitorScreen} alt="" />
+          <h4 className="listOfLangs__name">
+            <span>TypeScript</span>, for all web developers
           </h4>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Editor from "@monaco-editor/react";
 import { FillSpinner as Loader } from "react-spinners-kit";
-import "../StyleSheet/TextEditor.css";
 
 export const TextEditor = () => {
+  const [theme, setTheme] = useState("dark");
   const [language, setLanguage] = useState("typescript");
   const [isEditorReady, setIsEditorReady] = useState(false);
 
@@ -12,17 +12,15 @@ export const TextEditor = () => {
   }
 
   return (
-    <div className="textEditor__container">
+    <>
       <Editor
         height="90vh" // By default, it fully fits with its parent
-        theme={"dark"}
+        theme={theme}
         language={language}
         loading={<Loader />}
         editorDidMount={handleEditorDidMount}
         options={{ lineNumbers: "on" }}
-        className="textEditor"
-        width={"80%"}
       />
-    </div>
+    </>
   );
 };

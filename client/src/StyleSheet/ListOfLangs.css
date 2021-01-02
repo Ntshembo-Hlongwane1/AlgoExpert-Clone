@@ -1,34 +1,31 @@
 .ListOfLangs {
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
-  margin-left: 1.2rem;
-  margin-top: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .listOfLangs__header,
-.listOfLangs__mainText {
-  margin-bottom: 1.5rem;
+.listOfLangs__text {
+  margin-bottom: 1.3rem;
 }
 
-.listOfLangs__programmingLangs {
+.listOfLangs__programmingL {
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
 }
 
-.programming__langsIcons {
-  width: 8%;
-}
-
-.Java,
+.java,
 .python,
-.Typescript {
+.typescript {
   display: flex;
   align-items: center;
   margin-bottom: 1.2rem;
 }
 
-.programming__langLanguage {
+.listOfLangs__icons {
+  width: 7%;
+}
+
+.listOfLangs__name {
   margin-left: 1rem;
 }
