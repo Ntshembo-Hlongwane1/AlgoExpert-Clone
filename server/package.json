@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This is a Backend to house agency site ",
+  "main": "dist/server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b .",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node src/server.ts"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cloudinary": "^1.23.0",
+    "compile-run": "^2.3.4",
+    "connect-mongodb-session": "^2.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2",
+    "mongoose": "^5.11.9",
+    "nodemailer": "^6.4.17"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/connect-mongodb-session": "^2.4.0",
+    "@types/cors": "^2.8.9",
+    "@types/express-session": "^1.17.3",
+    "@types/formidable": "^1.0.32",
+    "@types/node": "^14.14.19",
+    "@types/nodemailer": "^6.4.0",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
